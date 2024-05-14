@@ -1,0 +1,44 @@
+public class Stacks {
+    int top = -1;
+    char stackArray[];
+    int size;
+
+    Stacks(int size) {
+        this.size = size;
+        stackArray = new char[size];
+    }
+
+    boolean isEmpty() {
+        return top == -1;
+    }
+
+    boolean isFull() {
+        return top == size-1;
+    }
+
+    void push(char data) {
+        if (isFull()) {
+            System.out.println("Stack Overflow");
+            return;
+        }
+        stackArray[++top] = data;
+    }
+
+    char pop () {
+        if (isEmpty()) {
+            return 'f';   // if -1 is a value in the stack then return -99999. something larger out of stack domain or
+                         // return toString
+        }
+//        int tempTop = top;
+//        top--;
+        return stackArray[top--];
+    }
+
+    char peek() {
+        return stackArray[top];
+    }
+
+    int size() {
+        return top+1;
+    }
+}
