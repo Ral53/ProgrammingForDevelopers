@@ -17,7 +17,7 @@ public class LruCaching {
         } else if(map.size() == capacity) {
             removeKey(tail);
         } else { // if no mapFull && no isKeyAlreadyExist && isEmpty
-            CacheNode newNode = new CacheNode(key, value); // new Node Creation
+            CacheNode newNode = new CacheNode(key, value); // new LinkedList.Node Creation
             insertkey(newNode);
             tail = newNode;
         }

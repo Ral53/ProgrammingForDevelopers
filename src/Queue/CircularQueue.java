@@ -1,9 +1,11 @@
+package Queue;
+
 public class CircularQueue {
     int[] queue;
     int front, rear = -1;
     int size;
 
-    CircularQueue(int size) {
+    public CircularQueue(int size) {
         this.size = size;
         queue = new int[size];
     }
@@ -12,11 +14,11 @@ public class CircularQueue {
         return (rear + 1) % size == front;
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return (front == -1 && rear == -1);
     }
 
-    void enqueue(int data) {
+    public void enqueue(int data) {
         if (isFull()) {
             System.out.println("Queue is Full.");
         } else {
@@ -28,7 +30,7 @@ public class CircularQueue {
         }
     }
 
-    int dequeue() {
+    public int dequeue() {
         if (isEmpty()) {
             System.out.println("Queue is Empty.");
             return -1;

@@ -1,3 +1,5 @@
+package Stack;
+
 public class CheckParentheses {
     boolean isValid(String s) {
         Stacks stk = new Stacks(s.length());

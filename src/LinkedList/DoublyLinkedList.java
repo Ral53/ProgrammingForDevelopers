@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class DoublyLinkedList {
     int size = 0;
     Node head = null;
@@ -12,9 +14,9 @@ public class DoublyLinkedList {
         else {
             // Time  Complexity is O(n) but can it be reduced. We assign tail similar to head for storing
             // address of last item
-            tail.next = tailNode; // creates Link by storing next address in Last Node
+            tail.next = tailNode; // creates Link by storing next address in Last LinkedList.Node
             tailNode.prev = tail;
-            tail = tailNode; // moves tail to now last Node
+            tail = tailNode; // moves tail to now last LinkedList.Node
         }
         size++; // increase size of node bt each insertion.
     }

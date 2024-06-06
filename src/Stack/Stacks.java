@@ -1,14 +1,17 @@
+package Stack;
+
 public class Stacks {
     int top = -1;
     char stackArray[];
+    int stackArrayInt[];
     int size;
 
-    Stacks(int size) {
+    public Stacks(int size) {
         this.size = size;
         stackArray = new char[size];
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return top == -1;
     }
 
@@ -24,7 +27,15 @@ public class Stacks {
         stackArray[++top] = data;
     }
 
-    char pop () {
+    public void push(int data) {
+        if (isFull()) {
+            System.out.println("Stack Overflow");
+            return;
+        }
+        stackArrayInt[++top] =  data;
+    }
+
+    public char pop() {
         if (isEmpty()) {
             return 'f';   // if -1 is a value in the stack then return -99999. something larger out of stack domain or
                          // return toString

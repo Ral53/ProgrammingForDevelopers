@@ -1,11 +1,11 @@
 package Graphs;
 
-public class GraphMatrix {
+public class GraphMatrixChat {
 
     private final int vertices;
     private final int[][] adjacencyMatrix;
 
-    public GraphMatrix(int vertices) {
+    public GraphMatrixChat(int vertices) {
         this.vertices = vertices;
         adjacencyMatrix = new int[vertices][vertices];
     }
@@ -29,7 +29,7 @@ public class GraphMatrix {
 
     public static void main(String[] args) {
         int vertices = 5; // Number of vertices A, B, C, D, E
-        GraphMatrix graph = new GraphMatrix(vertices);
+        GraphMatrixChat graph = new GraphMatrixChat(vertices);
 
         graph.addEdge(0, 1); // A - B
         graph.addEdge(0, 2); // A - C

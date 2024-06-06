@@ -1,11 +1,10 @@
-import Caching.LruCaching;
-
-import java.util.Stack;
+import DynamicProgramming.Denomination;
+import DynamicProgramming.MemoizationFibonacci;
 
 public class Main {
     public static void main(String[] args) {
 
-//        Stacks stack = new Stacks(5);
+//        Stack.Stacks stack = new Stack.Stacks(5);
 //        stack.push('b');
 //        stack.push('b');
 //        System.out.println("Last element of Stack : " + stack.pop());
@@ -16,8 +15,8 @@ public class Main {
 
 // ======================================================================================================
 
-////        Statement for "CheckParentheses" Class
-//        CheckParentheses chk = new CheckParentheses();
+////        Statement for "Stack.CheckParentheses" Class
+//        Stack.CheckParentheses chk = new Stack.CheckParentheses();
 //        System.out.println(chk.isValid("{()}"));  // Should print true
 //        System.out.println(chk.isValid("{(})"));  // Should print false
 //        System.out.println(chk.isValid("{([)]}")); // Should print false
@@ -25,8 +24,8 @@ public class Main {
 
 // ======================================================================================================
 
-//        // Create an instance of the InfixToPostFix class
-//        InfixToPostFix converter = new InfixToPostFix();
+//        // Create an instance of the Stack.InfixToPostFix class
+//        Stack.InfixToPostFix converter = new Stack.InfixToPostFix();
 //        // Example infix expression
 //        String infixExpression1 = "3 + 4 * 2 / (1 - 5)^2";
 //        // Convert the infix expression to postfix
@@ -38,7 +37,7 @@ public class Main {
 
 //        // Infix to Prefix Conversion Example
 //        String infixExpression = "K+L-M*N+(O^P)*W/U/V*T+Q"; // Given infix expression
-//        InfixToPrefix.infixToPrefix(infixExpression);
+//        Stack.InfixToPrefix.infixToPrefix(infixExpression);
 
 
 // ======================================================================================================
@@ -63,7 +62,7 @@ public class Main {
 
 // ======================================================================================================
         // Create a queue with a size of 5
-//        Queues queue = new Queues(5);
+//        Queue.Queues queue = new Queue.Queues(5);
 //
 //        // Enqueue some elements
 //        queue.enqueue(10);
@@ -95,8 +94,8 @@ public class Main {
 
 // ======================================================================================================
 
-//// Create a new instance of the QueueUsingStack class
-//        QueueUsingStack queue = new QueueUsingStack();
+//// Create a new instance of the Queue.QueueUsingStack class
+//        Queue.QueueUsingStack queue = new Queue.QueueUsingStack();
 //
 //// Enqueue elements into the queue
 //        queue.enqueue(1);
@@ -114,7 +113,7 @@ public class Main {
 // ======================================================================================================
 
 //        // Linked List Implementation
-//        SinglyLinkedList list = new SinglyLinkedList();
+//        LinkedList.SinglyLinkedList list = new LinkedList.SinglyLinkedList();
 //        list.insert(1);
 //        list.insert(2);
 //        list.insert(3);
@@ -126,7 +125,7 @@ public class Main {
 
 // ======================================================================================================
 //
-//        DoublyLinkedList list = new DoublyLinkedList();
+//        LinkedList.DoublyLinkedList list = new LinkedList.DoublyLinkedList();
 //
 //        // Inserting elements at the tail
 //        list.insertAtTail(1);
@@ -176,6 +175,9 @@ public class Main {
 
 
 
-       }
+// ======================================================================================================
 
+
+    }
 }
+

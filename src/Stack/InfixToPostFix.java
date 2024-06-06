@@ -1,3 +1,5 @@
+package Stack;
+
 public class InfixToPostFix {
 
     // Method to determine the precedence of operators

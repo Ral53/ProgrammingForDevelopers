@@ -1,3 +1,5 @@
+package Queue;
+
 public class Queues {
 
     int[] queue;
@@ -5,7 +7,7 @@ public class Queues {
     int rear = -1;
     int size;
 
-    Queues(int size) {
+    public Queues(int size) {
         this.size = size;
         queue = new int[size];
     }
@@ -14,11 +16,11 @@ public class Queues {
         return rear == size - 1;
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return rear == -1 && front == -1;
     }
 
-    void enqueue(int data) {
+    public void enqueue(int data) {
         if (isFull()) {
             System.out.println("Queue is Full.");
         } else {
@@ -30,7 +32,7 @@ public class Queues {
         }
     }
 
-    int dequeue() {
+    public int dequeue() {
         if (isEmpty()) {
             System.out.println("Queue is Empty.");
             return -1;
@@ -42,4 +44,5 @@ public class Queues {
         }
         return queue[front++];
     }
+
 }

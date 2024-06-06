@@ -1,3 +1,5 @@
+package Stack;
+
 class InfixToPrefix {
 
     public static String reverseString(String str) {
@@ -50,12 +52,12 @@ class InfixToPrefix {
 }
 
 //    static String convertPostFix(String infix) {
-//        Stacks stk = new Stacks(infix.length());
+//        Stack.Stacks stk = new Stack.Stacks(infix.length());
 //        String postfix = "";
 //        for (int i = 0; i < infix.length(); i++) {
 //            char ch = infix.charAt(i);
-//            if (InfixToPostFix.precedence(ch) > 0) {
-//                while (!stk.isEmpty() && InfixToPostFix.precedence(ch) <= InfixToPostFix.precedence(stk.peek())) {
+//            if (Stack.InfixToPostFix.precedence(ch) > 0) {
+//                while (!stk.isEmpty() && Stack.InfixToPostFix.precedence(ch) <= Stack.InfixToPostFix.precedence(stk.peek())) {
 //                    postfix = postfix + stk.pop();
 //                }
 //                stk.push(ch);

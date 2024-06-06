@@ -1,3 +1,7 @@
+package Stack;
+
+import Queue.CircularQueue;
+
 public class StackUsingQueue {
     CircularQueue q1 = new CircularQueue(5);
     CircularQueue q2 = new CircularQueue(5);
